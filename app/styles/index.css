@@ -1,0 +1,11 @@
+/* Ignoring Default syles */
+/* @import url('https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css'); */
+
+.main{
+    display: flex;
+    background-color: aqua;
+}
+
+h1{
+    background-color: aqua;
+}

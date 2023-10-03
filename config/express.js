@@ -28,6 +28,7 @@ module.exports = () => {
     app.use('/', require('../app/routes/index.server.routes.js'));
 
     app.use(express.static('./node_modules'));
+    app.use('/public', express.static('public'));
 
     return app;
 };

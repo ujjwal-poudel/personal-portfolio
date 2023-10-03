@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "/styles/header.css"/>
-    <link rel = "stylesheet" href = "/styles/index.css"/>
-    <link rel ="stylesheet" href="/app/styles/header.css" />
-    <title>Ujjwal Poudel </title>
+    <link rel="stylesheet" href="/public/styles/index.css" />
+    <link rel="stylesheet" href="/public/styles/style.css" />
+    <link rel="stylesheet" href="/public/styles/header.css" />
+    <title>Ujjwal Poudel</title>
 </head>
+
 <body>
-    <!-- <%- include('../views/partials/header.ejs') %>
-    <main class="main">
-        <h1>I'm Ujjwal Poudel</h1>
-        <h4>Web developer, Software Engineer and AI enthusiast</h4>
+    <header class="header">
+        <%- include('../views/partials/header.ejs') %>
+    </header>
+
+    <main class="main container">
+        <!-- ======= Hero Section ======= -->
+        <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
+            <div class="overlay-itro"></div>
+            <div class="hero-content display-table">
+                <div class="table-cell">
+                    <div class="container">
+                        <!--<p class="display-6 color-d">Hello, world!</p>-->
+                        <h1 class="hero-title mb-4">I am Morgan Freeman</h1>
+                        <p class="hero-subtitle"><span class="typed"
+                                data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+                        <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Hero Section -->
+
+        <section class="about-page" id="about-page">
+            <%- include('./partials/about.ejs/') %>
+        </section>
+
+        <section class="skills-page" id="skills-page">
+            <%- include('./partials/skills.ejs/') %>
+        </section>
+
+        <section class="projects-page" id="projects-page">
+            <%- include('./partials/projects.ejs/') %>
+        </section>
+
+        <section class="contact-page" id="contact-page">
+            <%- include('./partials/contact.ejs')%>
+        </section>
     </main>
 
-    <%- include('./partials/about.ejs/') %>
-    <%- include('./partials/skills.ejs/') %>
-    <%- include('./partials/projects.ejs/') %> -->
-    <div class="main">
-        <p style="background-color: aqua;">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit placeat ducimus ipsam voluptatibus magnam obcaecati nulla consectetur, consequatur voluptate voluptatem, error laudantium excepturi, eos nisi dolorem modi accusantium praesentium aliquam.
-        </p>
-    </div>
-
-    <p class = "navbar-nav">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio deserunt eius laboriosam nihil vitae facilis dolore, est quidem id non veritatis veniam excepturi, voluptatibus qui. Quae placeat perspiciatis nesciunt repudiandae.
-    </p>
-    
-</body>
 </html>

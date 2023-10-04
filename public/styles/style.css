@@ -1,17 +1,13 @@
-/**
-* Template Name: DevFolio
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+@import url('https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css');
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+.container {
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
 body {
-    background-color: #f5f5f5;
-    color: #4e4e4e;
+  background: linear-gradient(124deg, #06061A 0%, #0E1031 92.51%, #0E1931 99.33%);
+    color: #FFFFFF;
   }
   
   h1,
@@ -20,11 +16,11 @@ body {
   h4,
   h5,
   h6 {
-    color: #1e1e1e;
+    color: #FFFFFF;
   }
   
   a {
-    color: #1e1e1e;
+    color: #FFFFFF;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
   }
@@ -41,16 +37,16 @@ body {
   
   .color-a {
     text-decoration: none;
-    color: #0078ff;
+    color: #FFFFFF;
   }
   
   .color-d {
-    color: #f5f5f5;
+    color: #FFFFFF;
   }
   
   .color-text-a {
     text-decoration: none;
-    color: #4e4e4e;
+    color: #FFFFFF;
   }
   
   .box-shadow,
@@ -211,34 +207,7 @@ body {
       padding: 3rem;
     }
   }
-  
-  /*------/ Socials /------*/
-  .socials {
-    padding: 1.5rem 0;
-  }
-  
-  .socials ul li {
-    display: inline-block;
-  }
-  
-  .socials .ico-circle {
-    height: 40px;
-    width: 40px;
-    font-size: 1.2rem;
-    border-radius: 50%;
-    line-height: 1.6;
-    margin: 0 15px 0 0;
-    box-shadow: 0 0 0 3px #0078ff;
-    transition: all 500ms ease;
-  }
-  
-  .socials .ico-circle:hover {
-    background-color: #0078ff;
-    color: #fff;
-    box-shadow: 0 0 0 3px #cde1f8;
-    transition: all 500ms ease;
-  }
-  
+ 
   /*------/ Ul resect /------*/
   .ul-resect,
   .widget-tags ul,
@@ -302,31 +271,6 @@ body {
   .owl-theme .owl-dots .owl-dot.active span {
     background-color: #1B1B1B;
     width: 25px;
-  }
-  
-  /*--/ Scrolltop s /--*/
-  .scrolltop-mf {
-    position: relative;
-    display: none;
-  }
-  
-  .scrolltop-mf span {
-    z-index: 999;
-    position: fixed;
-    width: 42px;
-    height: 42px;
-    background-color: #0078ff;
-    opacity: 0.7;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    text-align: center;
-    color: #fff;
-    top: auto;
-    left: auto;
-    right: 30px;
-    bottom: 50px;
-    cursor: pointer;
-    border-radius: 50%;
   }
   
   /*--------------------------------------------------------------
@@ -396,56 +340,7 @@ body {
       transform: rotate(360deg);
     }
   }
-  
-  /*------/ Button /------*/
-  .button {
-    display: inline-block;
-    padding: 0.3rem 0.6rem;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    font-size: 1rem;
-    border-radius: 0.3rem;
-    border: 1px solid transparent;
-    transition: all 500ms ease;
-    cursor: pointer;
-  }
-  
-  .button:focus {
-    outline: 0;
-  }
-  
-  .button:hover {
-    background-color: #0062d3;
-    color: #fff;
-    transition: all 500ms ease;
-  }
-  
-  .button-a {
-    text-decoration: none;
-    background-color: #0078ff;
-    color: #fff;
-    border-color: #cde1f8;
-  }
-  
-  .button-big {
-    padding: 0.9rem 2.3rem;
-    font-size: 1.2rem;
-  }
-  
-  .button-rouded {
-    border-radius: 5rem;
-  }
-  
-  .btn-lg {
-    padding: 0.5rem 1rem;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    border-radius: 0.3rem;
-  }
-  
+
   /*--------------------------------------------------------------
   # Header
   --------------------------------------------------------------*/
@@ -748,7 +643,6 @@ body {
   }
   
   .hero .overlay-itro {
-    background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     top: 0;
     left: 0px;

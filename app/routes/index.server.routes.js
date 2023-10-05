@@ -20,12 +20,6 @@ router.get('/projects', (req, res, next) => {
     })
 })
 
-router.get('/skills', (req, res, next) => {
-    res.render('skills', {
-        title: "Skills"
-    })
-})
-
 router.get('/contact', (req, res, next) => {
     res.render('contact', {
         title: "Contact"

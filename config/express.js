@@ -3,7 +3,6 @@ const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
-const compress = require('compress');
 
 module.exports = () => {
     const app = express();
@@ -12,7 +11,6 @@ module.exports = () => {
         app.use(morgan('Dev'));
     } else if(process.env.NODE_ENV === 'production'){
         app.use(morgan('Prod'));
-        app.use(compress());
     }
 
     app.use(bodyParser.urlencoded({
